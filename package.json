@@ -1,5 +1,5 @@
 {
-  "name": "composition",
+  "name": "ra-composition-cards",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -36,5 +36,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+	"homepage":"https://222alexa.github.io/ra-composition-cards/"
 }
