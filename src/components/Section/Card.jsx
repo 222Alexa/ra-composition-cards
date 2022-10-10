@@ -21,4 +21,4 @@ Card.propTypes = {
   }),
 };
 
-/**<CardContent data={props} changePreview={preview => setPreview(preview)}></CardContent> */
+

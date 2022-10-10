@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export const CardTitle = ({ title }) => {
   return (
@@ -7,12 +8,19 @@ export const CardTitle = ({ title }) => {
     </>
   );
 };
+CardTitle.propTypes = {
+  title: PropTypes.string,
+};
+
 export const CardText = ({ text }) => {
   return (
     <>
       <p className="card-text">{text}</p>
     </>
   );
+};
+CardText.propTypes = {
+  text: PropTypes.string,
 };
 
 export const UrlImage = ({ url }) => {
@@ -27,17 +35,24 @@ export const UrlImage = ({ url }) => {
     </>
   );
 };
+UrlImage.propTypes = {
+  url: PropTypes.string,
+};
 
-export const Button = ({ url }) => {
+export const Button = ({ url, text }) => {
   return (
     <>
       <a className="card-link" href={url}>
-        Go somewhere
+        {text}
       </a>
     </>
   );
 };
 
+UrlImage.propTypes = {
+  url: PropTypes.string,
+  text: PropTypes.string,
+};
 Button.defaultProps = {
   url: "#",
 };
